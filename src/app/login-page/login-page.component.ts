@@ -10,7 +10,7 @@ export class LoginPageComponent implements OnInit {
 
   public bgColor = '#eee';
 
-  constructor(private fb: FormBuilder) {   }
+  constructor(private fb: FormBuilder) {}
 
   loginForm = this.fb.group({
     email: [null,[Validators.required,Validators.email]],
